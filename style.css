@@ -1,0 +1,2546 @@
+/*
+Theme Name: Baby em Casa
+Theme URI: https://temas.babyemcasa.com
+Author: Henrique Moraes
+Author URI: https://hq.hospedar.net
+Description: Projeto Baby em Casa
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: clean
+Text Domain: babyemcasa
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 3vw;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+  html img {
+    max-width: 90vw;
+  }
+  html body {
+    position: relative;
+  }
+  html .outrosSites {
+    top: 1rem;
+    right: 3rem;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    border: 5px solid #e0e1e9;
+    position: fixed;
+  }
+  html .outrosSites h4 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .outrosSites ul li {
+    list-style-type: none;
+  }
+  html .outrosSites ul li a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+  }
+  html .outrosSites .botaoFechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/cancel-close-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html .esconderMenu {
+    display: none;
+  }
+  html .exibirMenu {
+    display: block;
+  }
+  html header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html header .topo {
+    height: 4rem;
+    background-image: linear-gradient(to right, #e4b4c2, #e7cee3);
+  }
+  html header a {
+    display: flex;
+    text-decoration: none;
+  }
+  html header a .logoTexto {
+    font-weight: bold;
+  }
+  html header a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  html header a img {
+    height: 100%;
+    width: 3rem;
+  }
+  html header a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  html header a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  html header a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  html header .menu {
+    z-index: 1;
+    border: none;
+    background: none;
+  }
+  html header .menu img {
+    height: 2rem;
+    filter: opacity(0.5);
+  }
+  html .blogTitulo {
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), 80%, rgba(255, 255, 255, 0));
+  }
+  html .blogTitulo .tituloParts {
+    position: absolute;
+    top: -2rem;
+    width: fit-content;
+  }
+  html .blogTitulo .tituloParts h4 {
+    width: fit-content;
+    margin: 0 auto !important;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .blogTitulo .tituloParts p {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin-top: -0.8rem !important;
+    margin: 0 auto !important;
+  }
+
+  html {
+    font-size: 3vw;
+  }
+
+  .menuPrincipal ul {
+    border: 1px solid #e0e1e9;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menuPrincipal ul .ativo {
+    background-color: #e0e1e9;
+  }
+  .menuPrincipal ul .inativo {
+    background-color: white;
+  }
+  .menuPrincipal ul li {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Baloo 2", cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid #e0e1e9;
+  }
+  .menuPrincipal ul li a {
+    text-decoration: none;
+  }
+
+  aside {
+    background-color: #e4b4c2;
+    height: 100%;
+  }
+  aside select, aside input[type=text] {
+    width: 100%;
+    font-size: 1rem;
+  }
+  aside tbody, aside td, aside tfoot, aside th, aside thead, aside tr {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+  }
+  aside h2 {
+    font-size: 1.5rem;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside ul li {
+    list-style-type: none;
+  }
+  aside .wp-calendar thead {
+    margin-top: 1rem;
+  }
+
+  .principal {
+    scroll-padding-top: 4rem;
+    margin-top: 0;
+    z-index: -1;
+  }
+
+  nav .nav-links {
+    margin: 0 auto !important;
+  }
+
+  .container-posts {
+    border: 2px solid #e7cee3;
+    padding: 1rem;
+  }
+  .container-posts .titulo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts {
+    margin-top: 0.5rem;
+  }
+  .container-posts .resumo_posts p {
+    font-size: 1.3rem;
+    font-family: "Baloo 2", cursive;
+    line-height: normal;
+  }
+  .container-posts .resumo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts h2 {
+    font-size: 1.3rem;
+  }
+  .container-posts .resumo_posts .leiamais {
+    text-align: right;
+    color: #e4b4c2;
+    text-decoration: none;
+  }
+
+  .infos_posts {
+    background-color: #e0e1e9;
+    height: 2rem;
+  }
+  .infos_posts p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+  }
+  .infos_posts a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+  }
+
+  .container_post {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .container_post .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container_post figure {
+    margin-top: 1rem;
+  }
+  .container_post .imagem_post {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .container_post .imagem_post img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .container_post .infos_post {
+    background-color: #e0e1e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container_post .infos_post p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Baloo 2", cursive !important;
+  }
+  .container_post .branco {
+    height: 3rem;
+  }
+
+  .conteudo_post p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post h2 {
+    font-size: 1.5rem;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3, h5 a {
+    font-family: "Baloo 2", cursive !important;
+  }
+
+  h5 a {
+    font-size: 1rem;
+  }
+
+  .img-carrossel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e0e1e9;
+    width: 100%;
+    bottom: 0;
+  }
+  footer a {
+    display: flex;
+    text-decoration: none;
+  }
+  footer a .logoTexto {
+    font-weight: bold;
+  }
+  footer a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  footer a img {
+    height: 100%;
+    width: 3rem;
+  }
+  footer a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  footer a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  footer a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  footer a {
+    width: 100%;
+    justify-content: end;
+  }
+  footer a .textoLogo {
+    width: fit-content;
+  }
+
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+  }
+  .logoFooter .logoMontado {
+    width: 100%;
+  }
+
+  .horizontalAds {
+    height: 6rem;
+    border: 1px solid #e0e1e9;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .verticalAds {
+    border: 1px solid #e0e1e9;
+    height: 100%;
+  }
+
+  .adsDireita {
+    right: 2.5rem;
+  }
+
+  .verticalAdsInterno {
+    margin-top: 4rem;
+    border: 1px solid #e0e1e9;
+  }
+
+  .categoryPL {
+    margin-top: 5rem;
+  }
+  .categoryPL .container_category {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .categoryPL .container_category .titulo_posts {
+    width: fit-content;
+  }
+  .categoryPL .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPL .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+  }
+
+  .categoryPLInterno {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryPLInterno .container_category {
+    border: none;
+    position: relative;
+  }
+  .categoryPLInterno .container_category .titulo_posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .categoryPLInterno .container_category .titulo_posts .iconPosts {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/05/baby-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .categoryPLInterno .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPLInterno .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+    width: 90%;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .exibir {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    background-color: white;
+    width: 100%;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e4b4c2;
+  }
+
+  .exibePosts {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+  }
+  .exibePosts button {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/up-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 42.5%;
+  }
+
+  .apontarAbaixo {
+    transform: rotate(180deg);
+  }
+
+  .apontarAcima {
+    transform: rotate(0deg);
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+
+  figcaption {
+    max-width: 100%;
+  }
+
+  .wpd-form-head {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 1.5vw;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+  html img {
+    max-width: 90vw;
+  }
+  html body {
+    position: relative;
+  }
+  html .outrosSites {
+    top: 1rem;
+    right: 3rem;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    border: 5px solid #e0e1e9;
+    position: fixed;
+  }
+  html .outrosSites h4 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .outrosSites ul li {
+    list-style-type: none;
+  }
+  html .outrosSites ul li a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+  }
+  html .outrosSites .botaoFechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/cancel-close-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html .esconderMenu {
+    display: none;
+  }
+  html .exibirMenu {
+    display: block;
+  }
+  html header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html header .topo {
+    height: 4rem;
+    background-image: linear-gradient(to right, #e4b4c2, #e7cee3);
+  }
+  html header a {
+    display: flex;
+    text-decoration: none;
+  }
+  html header a .logoTexto {
+    font-weight: bold;
+  }
+  html header a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  html header a img {
+    height: 100%;
+    width: 3rem;
+  }
+  html header a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  html header a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  html header a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  html header .menu {
+    z-index: 1;
+    border: none;
+    background: none;
+  }
+  html header .menu img {
+    height: 2rem;
+    filter: opacity(0.5);
+  }
+  html .blogTitulo {
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), 80%, rgba(255, 255, 255, 0));
+  }
+  html .blogTitulo .tituloParts {
+    position: absolute;
+    top: -2rem;
+    width: fit-content;
+  }
+  html .blogTitulo .tituloParts h4 {
+    width: fit-content;
+    margin: 0 auto !important;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .blogTitulo .tituloParts p {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin-top: -0.8rem !important;
+    margin: 0 auto !important;
+  }
+
+  html {
+    font-size: 1.5vw;
+  }
+
+  .menuPrincipal ul {
+    border: 1px solid #e0e1e9;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menuPrincipal ul .ativo {
+    background-color: #e0e1e9;
+  }
+  .menuPrincipal ul .inativo {
+    background-color: white;
+  }
+  .menuPrincipal ul li {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Baloo 2", cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid #e0e1e9;
+  }
+  .menuPrincipal ul li a {
+    text-decoration: none;
+  }
+
+  aside {
+    background-color: #e4b4c2;
+    height: 100%;
+  }
+  aside select, aside input[type=text] {
+    width: 100%;
+    font-size: 1rem;
+  }
+  aside tbody, aside td, aside tfoot, aside th, aside thead, aside tr {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+  }
+  aside h2 {
+    font-size: 1.5rem;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside ul li {
+    list-style-type: none;
+  }
+  aside .wp-calendar thead {
+    margin-top: 1rem;
+  }
+
+  .principal {
+    scroll-padding-top: 4rem;
+    margin-top: 0;
+    z-index: -1;
+  }
+
+  nav .nav-links {
+    margin: 0 auto !important;
+  }
+
+  .container-posts {
+    border: 2px solid #e7cee3;
+    padding: 1rem;
+  }
+  .container-posts .titulo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts {
+    margin-top: 0.5rem;
+  }
+  .container-posts .resumo_posts p {
+    font-size: 1.3rem;
+    font-family: "Baloo 2", cursive;
+    line-height: normal;
+  }
+  .container-posts .resumo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts h2 {
+    font-size: 1.3rem;
+  }
+  .container-posts .resumo_posts .leiamais {
+    text-align: right;
+    color: #e4b4c2;
+    text-decoration: none;
+  }
+
+  .infos_posts {
+    background-color: #e0e1e9;
+    height: 2rem;
+  }
+  .infos_posts p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+  }
+  .infos_posts a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+  }
+
+  .container_post {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .container_post .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container_post figure {
+    margin-top: 1rem;
+  }
+  .container_post .imagem_post {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .container_post .imagem_post img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .container_post .infos_post {
+    background-color: #e0e1e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container_post .infos_post p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Baloo 2", cursive !important;
+  }
+  .container_post .branco {
+    height: 3rem;
+  }
+
+  .conteudo_post p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post h2 {
+    font-size: 1.5rem;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3, h5 a {
+    font-family: "Baloo 2", cursive !important;
+  }
+
+  h5 a {
+    font-size: 1rem;
+  }
+
+  .img-carrossel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e0e1e9;
+    width: 100%;
+    bottom: 0;
+  }
+  footer a {
+    display: flex;
+    text-decoration: none;
+  }
+  footer a .logoTexto {
+    font-weight: bold;
+  }
+  footer a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  footer a img {
+    height: 100%;
+    width: 3rem;
+  }
+  footer a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  footer a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  footer a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  footer a {
+    width: 100%;
+    justify-content: end;
+  }
+  footer a .textoLogo {
+    width: fit-content;
+  }
+
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+  }
+  .logoFooter .logoMontado {
+    width: 100%;
+  }
+
+  .horizontalAds {
+    height: 6rem;
+    border: 1px solid #e0e1e9;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .verticalAds {
+    border: 1px solid #e0e1e9;
+    height: 100%;
+  }
+
+  .adsDireita {
+    right: 2.5rem;
+  }
+
+  .verticalAdsInterno {
+    margin-top: 4rem;
+    border: 1px solid #e0e1e9;
+  }
+
+  .categoryPL {
+    margin-top: 5rem;
+  }
+  .categoryPL .container_category {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .categoryPL .container_category .titulo_posts {
+    width: fit-content;
+  }
+  .categoryPL .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPL .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+  }
+
+  .categoryPLInterno {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryPLInterno .container_category {
+    border: none;
+    position: relative;
+  }
+  .categoryPLInterno .container_category .titulo_posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .categoryPLInterno .container_category .titulo_posts .iconPosts {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/05/baby-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .categoryPLInterno .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPLInterno .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+    width: 90%;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .exibir {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    background-color: white;
+    width: 100%;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e4b4c2;
+  }
+
+  .exibePosts {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+  }
+  .exibePosts button {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/up-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 42.5%;
+  }
+
+  .apontarAbaixo {
+    transform: rotate(180deg);
+  }
+
+  .apontarAcima {
+    transform: rotate(0deg);
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+
+  figcaption {
+    max-width: 100%;
+  }
+
+  .wpd-form-head {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.2vw;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+  html img {
+    max-width: 90vw;
+  }
+  html body {
+    position: relative;
+  }
+  html .outrosSites {
+    top: 1rem;
+    right: 3rem;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    border: 5px solid #e0e1e9;
+    position: fixed;
+  }
+  html .outrosSites h4 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .outrosSites ul li {
+    list-style-type: none;
+  }
+  html .outrosSites ul li a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+  }
+  html .outrosSites .botaoFechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/cancel-close-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html .esconderMenu {
+    display: none;
+  }
+  html .exibirMenu {
+    display: block;
+  }
+  html header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html header .topo {
+    height: 4rem;
+    background-image: linear-gradient(to right, #e4b4c2, #e7cee3);
+  }
+  html header a {
+    display: flex;
+    text-decoration: none;
+  }
+  html header a .logoTexto {
+    font-weight: bold;
+  }
+  html header a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  html header a img {
+    height: 100%;
+    width: 3rem;
+  }
+  html header a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  html header a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  html header a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  html header .menu {
+    z-index: 1;
+    border: none;
+    background: none;
+  }
+  html header .menu img {
+    height: 2rem;
+    filter: opacity(0.5);
+  }
+  html .blogTitulo {
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), 80%, rgba(255, 255, 255, 0));
+  }
+  html .blogTitulo .tituloParts {
+    position: absolute;
+    top: -2rem;
+    width: fit-content;
+  }
+  html .blogTitulo .tituloParts h4 {
+    width: fit-content;
+    margin: 0 auto !important;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .blogTitulo .tituloParts p {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin-top: -0.8rem !important;
+    margin: 0 auto !important;
+  }
+
+  html {
+    font-size: 1.2vw;
+  }
+
+  .menuPrincipal ul {
+    border: 1px solid #e0e1e9;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menuPrincipal ul .ativo {
+    background-color: #e0e1e9;
+  }
+  .menuPrincipal ul .inativo {
+    background-color: white;
+  }
+  .menuPrincipal ul li {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Baloo 2", cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid #e0e1e9;
+  }
+  .menuPrincipal ul li a {
+    text-decoration: none;
+  }
+
+  aside {
+    background-color: #e4b4c2;
+    height: 100%;
+  }
+  aside select, aside input[type=text] {
+    width: 100%;
+    font-size: 1rem;
+  }
+  aside tbody, aside td, aside tfoot, aside th, aside thead, aside tr {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+  }
+  aside h2 {
+    font-size: 1.5rem;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside ul li {
+    list-style-type: none;
+  }
+  aside .wp-calendar thead {
+    margin-top: 1rem;
+  }
+
+  .principal {
+    scroll-padding-top: 4rem;
+    margin-top: 0;
+    z-index: -1;
+  }
+
+  nav .nav-links {
+    margin: 0 auto !important;
+  }
+
+  .container-posts {
+    border: 2px solid #e7cee3;
+    padding: 1rem;
+  }
+  .container-posts .titulo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts {
+    margin-top: 0.5rem;
+  }
+  .container-posts .resumo_posts p {
+    font-size: 1.3rem;
+    font-family: "Baloo 2", cursive;
+    line-height: normal;
+  }
+  .container-posts .resumo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts h2 {
+    font-size: 1.3rem;
+  }
+  .container-posts .resumo_posts .leiamais {
+    text-align: right;
+    color: #e4b4c2;
+    text-decoration: none;
+  }
+
+  .infos_posts {
+    background-color: #e0e1e9;
+    height: 2rem;
+  }
+  .infos_posts p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+  }
+  .infos_posts a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+  }
+
+  .container_post {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .container_post .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container_post figure {
+    margin-top: 1rem;
+  }
+  .container_post .imagem_post {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .container_post .imagem_post img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .container_post .infos_post {
+    background-color: #e0e1e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container_post .infos_post p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Baloo 2", cursive !important;
+  }
+  .container_post .branco {
+    height: 3rem;
+  }
+
+  .conteudo_post p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post h2 {
+    font-size: 1.5rem;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3, h5 a {
+    font-family: "Baloo 2", cursive !important;
+  }
+
+  h5 a {
+    font-size: 1rem;
+  }
+
+  .img-carrossel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e0e1e9;
+    width: 100%;
+    bottom: 0;
+  }
+  footer a {
+    display: flex;
+    text-decoration: none;
+  }
+  footer a .logoTexto {
+    font-weight: bold;
+  }
+  footer a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  footer a img {
+    height: 100%;
+    width: 3rem;
+  }
+  footer a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  footer a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  footer a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  footer a {
+    width: 100%;
+    justify-content: end;
+  }
+  footer a .textoLogo {
+    width: fit-content;
+  }
+
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+  }
+  .logoFooter .logoMontado {
+    width: 100%;
+  }
+
+  .horizontalAds {
+    height: 6rem;
+    border: 1px solid #e0e1e9;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .verticalAds {
+    border: 1px solid #e0e1e9;
+    height: 100%;
+  }
+
+  .adsDireita {
+    right: 2.5rem;
+  }
+
+  .verticalAdsInterno {
+    margin-top: 4rem;
+    border: 1px solid #e0e1e9;
+  }
+
+  .categoryPL {
+    margin-top: 5rem;
+  }
+  .categoryPL .container_category {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .categoryPL .container_category .titulo_posts {
+    width: fit-content;
+  }
+  .categoryPL .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPL .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+  }
+
+  .categoryPLInterno {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryPLInterno .container_category {
+    border: none;
+    position: relative;
+  }
+  .categoryPLInterno .container_category .titulo_posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .categoryPLInterno .container_category .titulo_posts .iconPosts {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/05/baby-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .categoryPLInterno .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPLInterno .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+    width: 90%;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .exibir {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    background-color: white;
+    width: 100%;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e4b4c2;
+  }
+
+  .exibePosts {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+  }
+  .exibePosts button {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/up-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 42.5%;
+  }
+
+  .apontarAbaixo {
+    transform: rotate(180deg);
+  }
+
+  .apontarAcima {
+    transform: rotate(0deg);
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+
+  figcaption {
+    max-width: 100%;
+  }
+
+  .wpd-form-head {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1.3vw;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+  html img {
+    max-width: 90vw;
+  }
+  html body {
+    position: relative;
+  }
+  html .outrosSites {
+    top: 1rem;
+    right: 3rem;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    border: 5px solid #e0e1e9;
+    position: fixed;
+  }
+  html .outrosSites h4 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .outrosSites ul li {
+    list-style-type: none;
+  }
+  html .outrosSites ul li a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+  }
+  html .outrosSites .botaoFechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/cancel-close-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html .esconderMenu {
+    display: none;
+  }
+  html .exibirMenu {
+    display: block;
+  }
+  html header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html header .topo {
+    height: 4rem;
+    background-image: linear-gradient(to right, #e4b4c2, #e7cee3);
+  }
+  html header a {
+    display: flex;
+    text-decoration: none;
+  }
+  html header a .logoTexto {
+    font-weight: bold;
+  }
+  html header a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  html header a img {
+    height: 100%;
+    width: 3rem;
+  }
+  html header a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  html header a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  html header a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  html header .menu {
+    z-index: 1;
+    border: none;
+    background: none;
+  }
+  html header .menu img {
+    height: 2rem;
+    filter: opacity(0.5);
+  }
+  html .blogTitulo {
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), 80%, rgba(255, 255, 255, 0));
+  }
+  html .blogTitulo .tituloParts {
+    position: absolute;
+    top: -2rem;
+    width: fit-content;
+  }
+  html .blogTitulo .tituloParts h4 {
+    width: fit-content;
+    margin: 0 auto !important;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .blogTitulo .tituloParts p {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin-top: -0.8rem !important;
+    margin: 0 auto !important;
+  }
+
+  html {
+    font-size: 1.3vw;
+  }
+
+  .menuPrincipal ul {
+    border: 1px solid #e0e1e9;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menuPrincipal ul .ativo {
+    background-color: #e0e1e9;
+  }
+  .menuPrincipal ul .inativo {
+    background-color: white;
+  }
+  .menuPrincipal ul li {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Baloo 2", cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid #e0e1e9;
+  }
+  .menuPrincipal ul li a {
+    text-decoration: none;
+  }
+
+  aside {
+    background-color: #e4b4c2;
+    height: 100%;
+  }
+  aside select, aside input[type=text] {
+    width: 100%;
+    font-size: 1rem;
+  }
+  aside tbody, aside td, aside tfoot, aside th, aside thead, aside tr {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+  }
+  aside h2 {
+    font-size: 1.5rem;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside ul li {
+    list-style-type: none;
+  }
+  aside .wp-calendar thead {
+    margin-top: 1rem;
+  }
+
+  .principal {
+    scroll-padding-top: 4rem;
+    margin-top: 0;
+    z-index: -1;
+  }
+
+  nav .nav-links {
+    margin: 0 auto !important;
+  }
+
+  .container-posts {
+    border: 2px solid #e7cee3;
+    padding: 1rem;
+  }
+  .container-posts .titulo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts {
+    margin-top: 0.5rem;
+  }
+  .container-posts .resumo_posts p {
+    font-size: 1.3rem;
+    font-family: "Baloo 2", cursive;
+    line-height: normal;
+  }
+  .container-posts .resumo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts h2 {
+    font-size: 1.3rem;
+  }
+  .container-posts .resumo_posts .leiamais {
+    text-align: right;
+    color: #e4b4c2;
+    text-decoration: none;
+  }
+
+  .infos_posts {
+    background-color: #e0e1e9;
+    height: 2rem;
+  }
+  .infos_posts p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+  }
+  .infos_posts a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+  }
+
+  .container_post {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .container_post .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container_post figure {
+    margin-top: 1rem;
+  }
+  .container_post .imagem_post {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .container_post .imagem_post img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .container_post .infos_post {
+    background-color: #e0e1e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container_post .infos_post p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Baloo 2", cursive !important;
+  }
+  .container_post .branco {
+    height: 3rem;
+  }
+
+  .conteudo_post p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post h2 {
+    font-size: 1.5rem;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3, h5 a {
+    font-family: "Baloo 2", cursive !important;
+  }
+
+  h5 a {
+    font-size: 1rem;
+  }
+
+  .img-carrossel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e0e1e9;
+    width: 100%;
+    bottom: 0;
+  }
+  footer a {
+    display: flex;
+    text-decoration: none;
+  }
+  footer a .logoTexto {
+    font-weight: bold;
+  }
+  footer a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  footer a img {
+    height: 100%;
+    width: 3rem;
+  }
+  footer a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  footer a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  footer a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  footer a {
+    width: 100%;
+    justify-content: end;
+  }
+  footer a .textoLogo {
+    width: fit-content;
+  }
+
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+  }
+  .logoFooter .logoMontado {
+    width: 100%;
+  }
+
+  .horizontalAds {
+    height: 6rem;
+    border: 1px solid #e0e1e9;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .verticalAds {
+    border: 1px solid #e0e1e9;
+    height: 100%;
+  }
+
+  .adsDireita {
+    right: 2.5rem;
+  }
+
+  .verticalAdsInterno {
+    margin-top: 4rem;
+    border: 1px solid #e0e1e9;
+  }
+
+  .categoryPL {
+    margin-top: 5rem;
+  }
+  .categoryPL .container_category {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .categoryPL .container_category .titulo_posts {
+    width: fit-content;
+  }
+  .categoryPL .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPL .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+  }
+
+  .categoryPLInterno {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryPLInterno .container_category {
+    border: none;
+    position: relative;
+  }
+  .categoryPLInterno .container_category .titulo_posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .categoryPLInterno .container_category .titulo_posts .iconPosts {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/05/baby-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .categoryPLInterno .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPLInterno .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+    width: 90%;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .exibir {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    background-color: white;
+    width: 100%;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e4b4c2;
+  }
+
+  .exibePosts {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+  }
+  .exibePosts button {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/up-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 42.5%;
+  }
+
+  .apontarAbaixo {
+    transform: rotate(180deg);
+  }
+
+  .apontarAcima {
+    transform: rotate(0deg);
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+
+  figcaption {
+    max-width: 100%;
+  }
+
+  .wpd-form-head {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+  html img {
+    max-width: 90vw;
+  }
+  html body {
+    position: relative;
+  }
+  html .outrosSites {
+    top: 1rem;
+    right: 3rem;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    width: fit-content;
+    border: 5px solid #e0e1e9;
+    position: fixed;
+  }
+  html .outrosSites h4 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .outrosSites ul li {
+    list-style-type: none;
+  }
+  html .outrosSites ul li a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+  }
+  html .outrosSites .botaoFechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/cancel-close-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  html .esconderMenu {
+    display: none;
+  }
+  html .exibirMenu {
+    display: block;
+  }
+  html header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html header .topo {
+    height: 4rem;
+    background-image: linear-gradient(to right, #e4b4c2, #e7cee3);
+  }
+  html header a {
+    display: flex;
+    text-decoration: none;
+  }
+  html header a .logoTexto {
+    font-weight: bold;
+  }
+  html header a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  html header a img {
+    height: 100%;
+    width: 3rem;
+  }
+  html header a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  html header a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  html header a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  html header .menu {
+    z-index: 1;
+    border: none;
+    background: none;
+  }
+  html header .menu img {
+    height: 2rem;
+    filter: opacity(0.5);
+  }
+  html .blogTitulo {
+    position: relative;
+    z-index: 1;
+    height: 5rem;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), 80%, rgba(255, 255, 255, 0));
+  }
+  html .blogTitulo .tituloParts {
+    position: absolute;
+    top: -2rem;
+    width: fit-content;
+  }
+  html .blogTitulo .tituloParts h4 {
+    width: fit-content;
+    margin: 0 auto !important;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3rem;
+    color: #e0e1e9;
+    text-shadow: 2px 2px 5px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  html .blogTitulo .tituloParts p {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin-top: -0.8rem !important;
+    margin: 0 auto !important;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  .menuPrincipal ul {
+    border: 1px solid #e0e1e9;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menuPrincipal ul .ativo {
+    background-color: #e0e1e9;
+  }
+  .menuPrincipal ul .inativo {
+    background-color: white;
+  }
+  .menuPrincipal ul li {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: "Baloo 2", cursive !important;
+    font-size: 1.5rem;
+    border: 1px solid #e0e1e9;
+  }
+  .menuPrincipal ul li a {
+    text-decoration: none;
+  }
+
+  aside {
+    background-color: #e4b4c2;
+    height: 100%;
+  }
+  aside select, aside input[type=text] {
+    width: 100%;
+    font-size: 1rem;
+  }
+  aside tbody, aside td, aside tfoot, aside th, aside thead, aside tr {
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+  }
+  aside h2 {
+    font-size: 1.5rem;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside ul li {
+    list-style-type: none;
+  }
+  aside .wp-calendar thead {
+    margin-top: 1rem;
+  }
+
+  .principal {
+    scroll-padding-top: 4rem;
+    margin-top: 0;
+    z-index: -1;
+  }
+
+  nav .nav-links {
+    margin: 0 auto !important;
+  }
+
+  .container-posts {
+    border: 2px solid #e7cee3;
+    padding: 1rem;
+  }
+  .container-posts .titulo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts {
+    margin-top: 0.5rem;
+  }
+  .container-posts .resumo_posts p {
+    font-size: 1.3rem;
+    font-family: "Baloo 2", cursive;
+    line-height: normal;
+  }
+  .container-posts .resumo_posts h1 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container-posts .resumo_posts h2 {
+    font-size: 1.3rem;
+  }
+  .container-posts .resumo_posts .leiamais {
+    text-align: right;
+    color: #e4b4c2;
+    text-decoration: none;
+  }
+
+  .infos_posts {
+    background-color: #e0e1e9;
+    height: 2rem;
+  }
+  .infos_posts p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+  }
+  .infos_posts a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+  }
+
+  .container_post {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .container_post .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .container_post figure {
+    margin-top: 1rem;
+  }
+  .container_post .imagem_post {
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  .container_post .imagem_post img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .container_post .infos_post {
+    background-color: #e0e1e9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .container_post .infos_post p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: "Baloo 2", cursive !important;
+  }
+  .container_post .branco {
+    height: 3rem;
+  }
+
+  .conteudo_post p {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post h2 {
+    font-size: 1.5rem;
+    font-family: "Baloo 2", cursive !important;
+  }
+  .conteudo_post ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  h3, h5 a {
+    font-family: "Baloo 2", cursive !important;
+  }
+
+  h5 a {
+    font-size: 1rem;
+  }
+
+  .img-carrossel {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #e0e1e9;
+    width: 100%;
+    bottom: 0;
+  }
+  footer a {
+    display: flex;
+    text-decoration: none;
+  }
+  footer a .logoTexto {
+    font-weight: bold;
+  }
+  footer a p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  footer a img {
+    height: 100%;
+    width: 3rem;
+  }
+  footer a .textoLogo {
+    font-size: 1rem;
+    width: 3rem;
+    line-height: 1rem;
+    padding-left: 0.2rem;
+    padding-top: 1.8rem;
+    position: relative;
+  }
+  footer a .textoLogo .logoP1 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -20%;
+    font-size: 0.6rem;
+    top: 75%;
+  }
+  footer a .textoLogo .logoP2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #e0e1e9;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.599);
+    font-family: "Amita", cursive;
+  }
+  footer a {
+    width: 100%;
+    justify-content: end;
+  }
+  footer a .textoLogo {
+    width: fit-content;
+  }
+
+  .logoFooter {
+    display: flex;
+    justify-content: end;
+  }
+  .logoFooter .logoMontado {
+    width: 100%;
+  }
+
+  .horizontalAds {
+    height: 6rem;
+    border: 1px solid #e0e1e9;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .verticalAds {
+    border: 1px solid #e0e1e9;
+    height: 100%;
+  }
+
+  .adsDireita {
+    right: 2.5rem;
+  }
+
+  .verticalAdsInterno {
+    margin-top: 4rem;
+    border: 1px solid #e0e1e9;
+  }
+
+  .categoryPL {
+    margin-top: 5rem;
+  }
+  .categoryPL .container_category {
+    border: 2px solid #e7cee3;
+    position: relative;
+  }
+  .categoryPL .container_category .titulo_posts {
+    width: fit-content;
+  }
+  .categoryPL .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPL .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+  }
+
+  .categoryPLInterno {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryPLInterno .container_category {
+    border: none;
+    position: relative;
+  }
+  .categoryPLInterno .container_category .titulo_posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .categoryPLInterno .container_category .titulo_posts .iconPosts {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/05/baby-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10%;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .categoryPLInterno .container_category .titulo_posts h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .categoryPLInterno .container_category .titulo_posts a {
+    text-decoration: none;
+    color: #e4b4c2;
+    width: 90%;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .exibir {
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    background-color: white;
+    width: 100%;
+    padding: 0 4rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e4b4c2;
+  }
+
+  .exibePosts {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+  }
+  .exibePosts button {
+    background-image: url("https://babyemcasa.com/wp-content/uploads/2022/06/up-arrow-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 42.5%;
+  }
+
+  .apontarAbaixo {
+    transform: rotate(180deg);
+  }
+
+  .apontarAcima {
+    transform: rotate(0deg);
+  }
+
+  iframe {
+    width: 100%;
+    height: 30rem;
+  }
+
+  figcaption {
+    max-width: 100%;
+  }
+
+  .wpd-form-head {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
