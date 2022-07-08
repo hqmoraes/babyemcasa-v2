@@ -1,3 +1,6 @@
-<div class="row mb-4 justify-content-center">
-    <nav class="col-12 col-md-10 menuPrincipal "><?php wp_nav_menu(); ?></nav>
-</div>
+<?php wp_nav_menu(array(
+    'container'=>'div',
+    'container_class'=>'nav',
+    'container_id'=>'navTopo',
+    'menu_class'=>'menuPrincipal'
+    )); ?>

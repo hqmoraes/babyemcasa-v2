@@ -26,7 +26,7 @@ function exibePosts(){
 
 }
 
-document.querySelector('.textoLogo').innerHTML = '<span class="logoP1">em</span><span class="logoP2"> Casa</span>'
+
 document.addEventListener("DOMContentLoaded", function(){
     try {
         document.querySelectorAll('#menu-principal-1 li').forEach(li=>{
@@ -51,20 +51,6 @@ try {
 
 });
 
-let fecharMenu = document.querySelector('.outrosSites')
-let criarBotao = document.createElement('button');
-criarBotao.classList.add('botaoFechar');
-criarBotao.setAttribute('onclick','menuOutrosSites()')
-fecharMenu.prepend(criarBotao);
-
-
-let logoFooter = document.querySelector('.logoFooter')
-let logoMontado = document.querySelector('.logoMontado')
-
-logoFooter.appendChild(logoMontado.cloneNode(true))
-
-document.querySelector('.logoMontado a .textoLogo .logoP2').style.width = "3.8rem"
-
 document.querySelectorAll('p a').forEach(video=>{
     if(/^vídeo/.test(video.innerText)){
         vd = video.href.substring(video.href.lastIndexOf('/'))
@@ -72,43 +58,3 @@ document.querySelectorAll('p a').forEach(video=>{
     }
 
 })
-
-/** Carrossel de Categorias */
-
-$('.carrossel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    responsive: [
-        {
-            breakpoint: 1400,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-            }
-          },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
